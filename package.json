@@ -1,0 +1,38 @@
+{
+  "name": "node_structure_project",
+  "version": "1.0.0",
+  "description": "a basic templete for future project with node, express, mongo, api rest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon -L ./index.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graphiiics/node_structure_project.git"
+  },
+  "keywords": [
+    "template",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "@graphiiics",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graphiiics/node_structure_project/issues"
+  },
+  "homepage": "https://github.com/graphiiics/node_structure_project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.8",
+    "morgan": "^1.10.0"
+  }
+}
