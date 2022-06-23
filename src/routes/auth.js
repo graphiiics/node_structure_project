@@ -4,10 +4,12 @@ const jwt = require('jsonwebtoken');
 const router = express.Router();
 const { config } = require('../../config');
 const User = require('../models/User');
+const validationHandler = require('../../utils/middlewares/validationHandler');
+const { createUserSchema } = require('../../utils/schemas/user.schema');
 
 require('../../utils/auth/basic-strategy');
 
-router.post('/signup', async function(req, res, next){
+router.post('/signup', validationHandler(createUserSchema), async function(req, res, next){
     const { name, email, password } = req.body;
     console.log({name, email, password});
 
