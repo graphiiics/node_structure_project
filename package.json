@@ -27,7 +27,10 @@
   },
   "homepage": "https://github.com/graphiiics/node_structure_project#readme",
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "jest": "^28.1.1",
+    "mongodb-memory-server": "^8.7.1",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.3"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
